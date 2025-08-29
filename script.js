@@ -31,14 +31,21 @@ document.querySelectorAll(".call-btn").forEach(btn => {
   });
 });
 
+// Track copied numbers (resets on refresh)
+const copiedNumbers = new Set();
+
 // Copy buttons
 document.querySelectorAll(".copy-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const number = btn.getAttribute("data-number");
-    navigator.clipboard.writeText(number).then(() => {
-      copies++;
-      copyCount.textContent = copies;
-    });
+
+    if (!copiedNumbers.has(number)) {
+      navigator.clipboard.writeText(number).then(() => {
+        copiedNumbers.add(number);   //  copied marked
+        copies++;
+        copyCount.textContent = copies; //  UI update korbe
+      });
+    }
   });
 });
 

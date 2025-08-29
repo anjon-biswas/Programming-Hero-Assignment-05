@@ -51,12 +51,12 @@ body {
   color:white;
   background-color:rgba(0, 166, 62, 1);
   /* padding: 10px; */
-  border-radius: 10px;
+  border-radius: 20px;
   border-style: none;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 /* Hero */
@@ -109,7 +109,12 @@ body {
   justify-content: space-between;
   margin-bottom: 15px;
 }
-
+.card-banner-img{
+  padding:10px;
+  background-color: rgba(255, 227, 226, 1);
+  border-style: hidden;
+  border-radius: 20px;
+}
 .card-header-section-img{
   height:30px;
   width: 30px;
@@ -196,7 +201,7 @@ body {
   color:white;
   background-color:rgba(0, 166, 62, 1);
   /* padding: 10px; */
-  border-radius: 10px;
+  border-radius: 20px;
   border-style: none;
   padding-left: 15px;
   padding-right: 15px;
@@ -204,3 +209,7 @@ body {
   padding-top: 8px;
 
 }
+/* #clarHistory :hover{
+  background-color: #009966;
+  cursor: pointer;
+} */
